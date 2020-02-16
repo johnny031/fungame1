@@ -6,7 +6,8 @@ img {
 a {
   cursor: pointer;
 }
-.text {
+.text,
+.long_text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,7 +15,12 @@ a {
   white-space: nowrap;
   font-family: Microsoft JhengHei;
   font-weight: bold;
-  font-size: 175%;
+}
+.text {
+  font-size: 200%;
+}
+.long_text {
+  font-size: 180%;
 }
 .transform {
   -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
@@ -179,9 +185,6 @@ h6 {
   .order-last {
     padding: 20px 0;
   }
-  .text {
-    font-size: 200%;
-  }
   #yes_button,
   #no_button {
     width: 60px;
@@ -196,10 +199,19 @@ h6 {
   #no {
     font-size: 15px;
   }
+  .text {
+    font-size: 180%;
+  }
+  .long_text {
+    font-size: 160%;
+  }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 880px) {
   .text {
     font-size: 160%;
+  }
+  .long_text {
+    font-size: 140%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -211,6 +223,9 @@ h6 {
   }
   .text {
     font-size: 140%;
+  }
+  .long_text {
+    font-size: 120%;
   }
   #change_blue,
   #change_red,
@@ -245,12 +260,30 @@ h6 {
     height: 20px;
     top: 11vw;
   }
-}
-@media only screen and (max-width: 415px) {
   .text {
+    font-size: 120%;
+  }
+  .long_text {
     font-size: 100%;
   }
 }
+@media only screen and (max-width: 500px) {
+  .text {
+    font-size: 100%;
+  }
+  .long_text {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .text {
+    font-size: 85%;
+  }
+  .long_text {
+    font-size: 65%;
+  }
+}
+
 @media (max-width: 1367px) and (orientation: landscape) {
   img {
     position: relative;

@@ -7,342 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
       height: 300
     });
   });
-  var pictures = [
-    "公主",
-    "規",
-    "暴龍",
-    "油畫",
-    "空氣",
-    "俠盜",
-    "時鐘",
-    "牙線",
-    "橘子",
-    "推",
-    "貨櫃",
-    "溪",
-    "面紙",
-    "雨傘",
-    "衣櫥",
-    "鼠",
-    "丟",
-    "死",
-    "法條",
-    "手錶",
-    "鉛筆",
-    "書",
-    "丘",
-    "珠寶",
-    "滑雪",
-    "紐西蘭",
-    "埃及",
-    "富",
-    "吉他",
-    "豎笛",
-    "大河",
-    "腦下腺",
-    "換",
-    "木星",
-    "火",
-    "首都",
-    "柬埔寨",
-    "鼓",
-    "血",
-    "船",
-    "汽油",
-    "心臟",
-    "鋸",
-    "拍",
-    "波斯",
-    "歌劇院",
-    "號角",
-    "紅毛丹",
-    "噴射",
-    "銀",
-    "水缸",
-    "棒",
-    "牙科",
-    "戰士",
-    "海盜",
-    "蜜餞",
-    "公園",
-    "漫畫",
-    "大樓",
-    "火柴",
-    "北京",
-    "堅果",
-    "院",
-    "槍",
-    "度",
-    "副",
-    "日",
-    "礦",
-    "網",
-    "椅",
-    "騎",
-    "查",
-    "頭",
-    "雀鳥",
-    "魚",
-    "尼斯湖",
-    "外來者",
-    "大使館",
-    "體育館",
-    "巧克力",
-    "台灣",
-    "瓶",
-    "刷",
-    "熊",
-    "法庭",
-    "人馬",
-    "甲板",
-    "薄荷",
-    "捷運",
-    "象牙",
-    "射擊",
-    "走私者",
-    "度",
-    "賊",
-    "頂",
-    "結",
-    "老鼠",
-    "警察",
-    "首長",
-    "手掌",
-    "刀",
-    "鬼",
-    "領袖",
-    "實驗室",
-    "器官",
-    "直升機",
-    "拖鞋",
-    "襪子",
-    "內衣",
-    "精靈",
-    "魔法",
-    "希臘",
-    "森林",
-    "沙漠",
-    "女巫",
-    "荒野",
-    "公主",
-    "輪盤",
-    "機槍",
-    "衛星",
-    "猩",
-    "檸檬",
-    "企鵝",
-    "觸角",
-    "潛水",
-    "美國",
-    "滑",
-    "滴",
-    "波",
-    "炬",
-    "雪",
-    "冰",
-    "鈴",
-    "雅",
-    "沙",
-    "英雄",
-    "大富翁",
-    "獨角獸",
-    "日誌",
-    "賭場",
-    "電池",
-    "體重",
-    "埃及",
-    "空氣",
-    "檔案",
-    "瓷",
-    "磁碟",
-    "長笛",
-    "吉他",
-    "探員",
-    "草圖",
-    "澳洲",
-    "十字",
-    "稻草",
-    "德國",
-    "奶",
-    "塑膠",
-    "毒",
-    "戲院",
-    "亞馬遜",
-    "土星",
-    "音",
-    "騎士",
-    "床",
-    "柱",
-    "搖",
-    "獅",
-    "師",
-    "濕",
-    "洗衣機",
-    "唱",
-    "肥皂",
-    "脂肪",
-    "花萼",
-    "軟顎",
-    "神經",
-    "天堂",
-    "芭樂",
-    "倉庫",
-    "貨櫃",
-    "鋼",
-    "項鍊",
-    "髮簪",
-    "攪",
-    "亮",
-    "鄉",
-    "診",
-    "刮",
-    "光碟",
-    "聲",
-    "吃",
-    "蛋白質",
-    "描",
-    "廟",
-    "古老",
-    "聖殿",
-    "教堂",
-    "吻",
-    "棚",
-    "桌子",
-    "晃",
-    "飛機",
-    "頭蝨",
-    "蝙蝠",
-    "夜",
-    "硫酸",
-    "蝕",
-    "雨傘",
-    "套",
-    "狼人",
-    "偵探",
-    "龍捲風",
-    "平原",
-    "火山",
-    "沉",
-    "鑽石",
-    "地層",
-    "符咒",
-    "橄欖",
-    "地中海",
-    "競技場",
-    "公投",
-    "民主",
-    "法律",
-    "花生",
-    "地瓜",
-    "板凳",
-    "羽球",
-    "孔雀",
-    "暴龍",
-    "劣",
-    "蝸牛",
-    "藻",
-    "鹽",
-    "膠",
-    "礁",
-    "澆",
-    "椒",
-    "壓",
-    "窒息",
-    "浪",
-    "漲潮",
-    "麥克風",
-    "樹酯",
-    "映",
-    "硬",
-    "手機",
-    "報告",
-    "阿根廷",
-    "丹麥",
-    "乳牛",
-    "草",
-    "養分",
-    "蛋白",
-    "土",
-    "礦",
-    "九份",
-    "豚",
-    "龜",
-    "象",
-    "塔",
-    "枯",
-    "窟",
-    "骨",
-    "谷",
-    "泰國",
-    "馬鈴薯",
-    "汗",
-    "尿",
-    "臭",
-    "耳",
-    "迷宮",
-    "淋巴",
-    "平衡",
-    "獨木橋",
-    "輪胎",
-    "泛舟",
-    "峽谷",
-    "公路",
-    "駕照",
-    "鐵",
-    "金",
-    "護照",
-    "火箭",
-    "銀河",
-    "宇宙",
-    "蠟燭",
-    "胸花",
-    "地震",
-    "板塊",
-    "枕頭",
-    "棉花",
-    "絲",
-    "碳酸",
-    "石膏",
-    "瓷",
-    "熔",
-    "沸騰",
-    "蒸氣",
-    "牛排",
-    "叉",
-    "冰淇淋",
-    "酪",
-    "駱駝",
-    "仙人掌",
-    "挪威",
-    "勇者",
-    "投手",
-    "槍手",
-    "棍",
-    "俄羅斯",
-    "螺絲",
-    "鎖",
-    "鑰",
-    "酵素",
-    "鼻",
-    "黏膜",
-    "纖維",
-    "鬍",
-    "瞳孔",
-    "顯微鏡",
-    "電子",
-    "魂",
-    "死",
-    "店",
-    "墊",
-    "電",
-    "吸",
-    "熟",
-    "殼",
-    "螢光",
-    "抹",
-    "擦拭",
-    "行政"
-  ];
   var blue_kid_number = 8;
   var red_kid_number = 7;
   for (j = 0; j < 5; j++) {
@@ -354,11 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       td.setAttribute("id", j * 5 + i + 1);
       td.setAttribute("style", "position:relative;");
 
-      var div = document.createElement("div");
-      div.setAttribute("class", "text");
-
       var t = document.createTextNode(pictures[w[i + j * 5]]);
-      div.appendChild(t);
 
       var a = document.createElement("a");
       a.setAttribute("id", "a" + j + "_" + i);
@@ -368,7 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
       img.src = "static/img/board0.png";
 
       a.appendChild(img);
-      a.appendChild(div);
+
+      if (pictures[w[i + j * 5]].length > 3) {
+        var long_div = document.createElement("div");
+        long_div.setAttribute("class", "long_text");
+        long_div.appendChild(t);
+        a.appendChild(long_div);
+      } else {
+        var div = document.createElement("div");
+        div.setAttribute("class", "text");
+        div.appendChild(t);
+        a.appendChild(div);
+      }
+
       td.appendChild(a);
       tr.appendChild(td);
     }
@@ -404,8 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
     "a4_4"
   ];
 
-  console.log(c);
-
   for (i = 0; i < 9; i++) {
     var a = all_a[c[i]];
     document.getElementById(a).setAttribute("class", "blue");
@@ -431,6 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this)
       .children("img")
       .attr("style", "z-index: 1");
+    $(this)
+      .children("div")
+      .hide();
     $(this).attr("style", "cursor: default;");
     $(this).off("click");
     $("#blue_kid_number").html(blue_kid_number--);
@@ -457,6 +130,9 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this)
       .children("img")
       .attr("style", "z-index: 1");
+    $(this)
+      .children("div")
+      .hide();
     $(this).attr("style", "cursor: default;");
     $(this).off("click");
     $("#red_kid_number").html(red_kid_number--);
@@ -483,6 +159,9 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this)
       .children("img")
       .attr("style", "z-index: 1");
+    $(this)
+      .children("div")
+      .hide();
     $(this).attr("style", "cursor: default;");
     $(this).off("click");
     $("#alert").html("找到屎啦哈哈哈~~~");
@@ -504,6 +183,9 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this)
       .children("img")
       .attr("style", "z-index: 1");
+    $(this)
+      .children("div")
+      .hide();
     $(this).off("click");
     document.body.background = "static/img/boom.jpg";
     document.body.setAttribute("style", "z-index:4");
