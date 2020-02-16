@@ -1,0 +1,317 @@
+img {
+  position: relative;
+  width: 11vw;
+  height: 18vh;
+}
+a {
+  cursor: pointer;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  font-size: 175%;
+}
+.transform {
+  -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+  transition: 2s;
+}
+#answer_div {
+  margin: 1px;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 1px 1px 3px #616161;
+}
+
+#answer_background {
+  display: none;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+}
+
+#table {
+  margin: 0px auto;
+}
+
+#table2 {
+  margin: 0px auto;
+}
+.table2_div {
+  display: none;
+}
+
+h1 {
+  font-weight: bolder;
+  font-family: Microsoft JhengHei;
+  text-align: center;
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+  white-space: nowrap;
+}
+
+#boom_background {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+h4 {
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  word-break: keep-all;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc, 2px 2px 2px rgba(28, 110, 164, 0);
+  color: #121212;
+}
+
+h6 {
+  font-family: Microsoft JhengHei;
+  word-break: keep-all;
+}
+
+#blue_kid_number {
+  font-size: 33px;
+  color: blue;
+}
+
+#red_kid_number {
+  font-size: 33px;
+  color: red;
+}
+
+#blue_turn,
+#red_turn,
+#answer,
+#yes,
+#no,
+#ok,
+#qrcode_text {
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+}
+
+#alert,
+#alert_win,
+#alert_lose {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  z-index: 5;
+
+  font-size: 7vw;
+  font-family: Microsoft JhengHei;
+  margin: 10px;
+  font-weight: 550;
+  color: #ffffff;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00;
+}
+
+#change_blue,
+#change_red,
+#answer_button,
+#qrcode_button {
+  padding: 8px;
+  margin: 2px;
+}
+
+#yes_button {
+  display: none;
+  position: absolute;
+  left: 42%;
+  top: 9vw;
+  width: 70px;
+  height: 40px;
+  z-index: 2;
+}
+
+#no_button {
+  display: none;
+  position: absolute;
+  left: 54%;
+  top: 9vw;
+  width: 70px;
+  height: 40px;
+  z-index: 2;
+}
+#ok_button {
+  display: none;
+  margin: 10px;
+}
+
+#question {
+  display: none;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  width: 30vw;
+  height: calc(30vw * 0.5);
+  z-index: 2;
+}
+
+#none_img {
+  position: absolute;
+  left: 1406px;
+  top: 636px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1025px) {
+  img {
+    width: 17vw;
+    height: 15vh;
+  }
+  .order-last {
+    padding: 20px 0;
+  }
+  .text {
+    font-size: 200%;
+  }
+  #yes_button,
+  #no_button {
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    left: 41%;
+  }
+  #no_button {
+    left: 53%;
+  }
+  #yes,
+  #no {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .text {
+    font-size: 160%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  img {
+    height: 12vh;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 140%;
+  }
+  #change_blue,
+  #change_red,
+  #answer_button,
+  #qrcode_button {
+    padding: 5px;
+    margin: 2px;
+  }
+  #alert {
+    left: 0%;
+    font-size: 10vw;
+  }
+  #yes_button,
+  #no_button {
+    width: 40px;
+    height: 25px;
+  }
+  #yes,
+  #no {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #question {
+    left: 32%;
+    width: 38vw;
+    height: calc(38vw * 0.5);
+  }
+  #yes_button,
+  #no_button {
+    width: 30px;
+    height: 20px;
+    top: 11vw;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .text {
+    font-size: 100%;
+  }
+}
+@media (max-width: 1367px) and (orientation: landscape) {
+  img {
+    position: relative;
+    width: 15vw;
+    height: 18vh;
+  }
+  .col-sm-10,
+  .col-sm-2 {
+    padding: 0;
+  }
+  .table2_div {
+    padding: 20px 20px 0 0 !important;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  img {
+    height: 17.6vh;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 4vh;
+  }
+  h6 {
+    font-size: 4vh;
+  }
+  #blue_kid_number {
+    font-size: 4.5vh;
+  }
+  #red_kid_number {
+    font-size: 4.5vh;
+  }
+
+  #blue_turn,
+  #red_turn,
+  #answer,
+  #ok,
+  #qrcode_text {
+    font-size: 2.6vh;
+  }
+  #change_blue,
+  #change_red,
+  #answer_button,
+  #qrcode_button,
+  #ok_button {
+    padding: 3px;
+  }
+  #answer_div {
+    width: 18px;
+    height: 18px;
+    border-radius: 3.6px;
+  }
+}
+
+@media (max-width: 650px) and (orientation: landscape) {
+  #answer_div {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin: 0.5px;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/fungame.css" />
+  </head>
+
+  <body background="/static/img/background.jpg">
+    <h1>找回你的小花!</h1>
+    <div id="qrcode" style="display: none; text-align: center"></div>
+    <h1 id="alert"></h1>
+    <h1 id="alert_win"></h1>
+    <h1 id="alert_lose"></h1>
+    <div style="position: relative">
+      <img src="static/img/question.png" id="question" />
+      <button type="button" id="yes_button" class="btn btn-primary">
+        <div id="yes">確認</div>
+      </button>
+      <button type="button" id="no_button" class="btn">
+        <div id="no">取消</div>
+      </button>
+    </div>
+
+    <div class="container-fluid transform">
+      <div class="row rm_row">
+        <div class="col-sm-2 text-center rm_when_sm"></div>
+
+        <div class="col-sm-3 text-center order-last">
+          <div class="add_row">
+            <div class="left">
+              <h4 id="blue_or_red">藍隊回合!</h4>
+              <h6>
+                剩<span id="blue_kid_number">9</span>個藍色小花<br />
+                剩<span id="red_kid_number">8</span>個紅色小花
+              </h6>
+            </div>
+            <div class="right">
+              <button type="button" id="change_blue" class="btn btn-primary">
+                <div id="blue_turn">換藍隊回合!</div>
+              </button>
+              <br />
+              <button type="button" id="change_red" class="btn btn-danger">
+                <div id="red_turn">換紅隊回合!</div>
+              </button>
+              <br />
+              <button type="button" id="qrcode_button" class="btn btn-info">
+                <div id="qrcode_text">掃描QRcode</div>
+              </button>
+              <button type="button" id="answer_button" class="btn btn-default">
+                <div id="answer">答</div>
+              </button>
+            </div>
+          </div>
+          <div class="container table2_div" style="padding: 20px 10px 0 0;">
+            <table id="table2"></table>
+          </div>
+          <button type="button" id="ok_button" class="btn btn-default">
+            <div id="ok">OK!</div>
+          </button>
+        </div>
+        <div class="col-sm-7 table_div">
+          <table id="table"></table>
+        </div>
+      </div>
+    </div>
+
+    <script src="static/js/fungame.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+  <script type="text/javascript" src="/static/jquery.qrcode.min.js"></script>
+  <script type="text/javascript" src="/static/jquery.qrcode.js"></script>
+  <script type="text/javascript" src="/static/qrcode.js"></script>
+  <script>
+    var w = {{w | tojson}};
+    var c = {{c | tojson}};
+  </script>
+</html>
