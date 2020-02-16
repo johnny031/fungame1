@@ -339,7 +339,22 @@ h6 {
     border-radius: 3.6px;
   }
 }
-
+@media (max-width: 850px) and (orientation: landscape) {
+  .text {
+    font-size: 130%;
+  }
+  .long_text {
+    font-size: 115%;
+  }
+}
+@media (max-width: 715px) and (orientation: landscape) {
+  .text {
+    font-size: 110%;
+  }
+  .long_text {
+    font-size: 100%;
+  }
+}
 @media (max-width: 650px) and (orientation: landscape) {
   #answer_div {
     width: 14px;
