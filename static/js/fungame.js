@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (blue_kid_number === -1) {
       $("#alert_win").html("恭喜藍隊獲勝!!!");
-      $("a").unbind("click");
+      $("a").unbind("dblclick");
     } else if ($("#blue_or_red").html() === "藍隊回合!") {
       $("#alert").html("恭喜找到藍色小花!!!");
     } else {
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (red_kid_number === -1) {
       $("#alert_win").html("恭喜紅隊獲勝!!!");
-      $("a").unbind("click");
+      $("a").unbind("dblclick");
     } else if ($("#blue_or_red").html() === "紅隊回合!") {
       $("#alert").html("恭喜找到紅色小花!!!");
     } else {
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       $("#alert_lose").html("藍隊落敗...");
     }
-    $("a").unbind("click");
+    $("a").unbind("dblclick");
   });
 
   $("#change_red").on("click", function() {
