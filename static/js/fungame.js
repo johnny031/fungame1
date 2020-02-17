@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var a = all_a[c[24]];
   document.getElementById(a).setAttribute("class", "boom");
 
-  $(".blue").on("click", function() {
+  $(".blue").on("dblclick", function() {
     $(this)
       .children("img")
       .attr("src", "static/img/blue_flower.png");
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  $(".red").on("click", function() {
+  $(".red").on("dblclick", function() {
     $(this)
       .children("img")
       .attr("src", "static/img/red_flower.png");
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  $(".none").on("click", function() {
+  $(".none").on("dblclick", function() {
     $(this)
       .children("img")
       .attr("src", "static/img/shit.png");
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  $(".boom").on("click", function() {
+  $(".boom").on("dblclick", function() {
     $(this)
       .children("img")
       .attr("src", "static/img/boom_n.png");
