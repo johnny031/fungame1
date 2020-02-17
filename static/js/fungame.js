@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .children("div")
       .hide();
     $(this).attr("style", "cursor: default;");
-    $(this).off("click");
+    $(this).off("dblclick");
     $("#blue_kid_number").html(blue_kid_number--);
 
     if (blue_kid_number === -1) {
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .children("div")
       .hide();
     $(this).attr("style", "cursor: default;");
-    $(this).off("click");
+    $(this).off("dblclick");
     $("#red_kid_number").html(red_kid_number--);
 
     if (red_kid_number === -1) {
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .children("div")
       .hide();
     $(this).attr("style", "cursor: default;");
-    $(this).off("click");
+    $(this).off("dblclick");
     $("#alert").html("找到屎啦哈哈哈~~~");
     if ($("#blue_or_red").html() === "藍隊回合!") {
       $("#blue_or_red").html("紅隊回合!");
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this)
       .children("div")
       .hide();
-    $(this).off("click");
+    $(this).off("dblclick");
     document.body.background = "static/img/boom.jpg";
     document.body.setAttribute("style", "z-index:4");
 
