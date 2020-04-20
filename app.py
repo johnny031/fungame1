@@ -8,7 +8,7 @@ def index():
     r=[]
     c=[]
 
-    for i in range(2906):
+    for i in range(2930):
         r.append(i)
     for i in range(25):
         c.append(i)
